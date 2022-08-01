@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    height: 100%;
+    width: auto;
+}
+main{
+    height: 100%;
+    display: flex;
+}
+.container{
+    justify-content: center;
+    max-width: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    align-items: center;
+}
+.cuadro{
+    height: 100px;
+    width: 100px;
+}
+.cuadro-uno{
+    justify-items: center;
+    background-color: yellow;
+}
+.cuadro-dos{
+    background-color: red;
+}
+.cuadro-tres{
+    background-color: green;
+}
+.cuadro-cuatro{
+    background-color: blue;
+}
