@@ -22,13 +22,18 @@ main{
 .cuadro-uno{
     justify-items: center;
     background-color: yellow;
+    opacity: 0.5;
 }
 .cuadro-dos{
     background-color: red;
+    opacity: 0.5;
 }
 .cuadro-tres{
     background-color: green;
+    opacity: 0.5;
 }
 .cuadro-cuatro{
     background-color: blue;
+    opacity: 0.5;
 }
+
