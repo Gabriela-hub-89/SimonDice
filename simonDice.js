@@ -87,7 +87,6 @@ const cuatro = document.querySelector('#cuadro-cuatro')
 let arrayRonda = []
 let rondas = 0
 
-function obtenerCuadroRandom(random, cuadros) {
 function obtenerCuadroRandom() {
     
     let random = calcRandom()
@@ -113,7 +112,6 @@ function guardarCuadroArray() {
     
 
 }
-obtenerCuadroRandom(calcRandom(), capturarCuadros())
 // después hay que hacer que esta funcion se vaya ejecutando varias veces
 // y qué por cada vez vaya agregando un nuevo cuadro seleccionado al array
 guardarCuadroArray()
