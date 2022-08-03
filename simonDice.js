@@ -86,35 +86,43 @@ const cuatro = document.querySelector('#cuadro-cuatro')
 
 let arrayRonda = []
 let rondas = 0
+let elemento;
 
-function obtenerCuadroRandom() {
+
+function clickarCuadro(event) {
+    let click
+    if( event !== null) {
+        console.log('hiciste click')
+        click = event.target
+    }
+}
+
     
-    let random = calcRandom()
-    let cuadros = capturarCuadros()
-    let elemento;
     for (const cuadro in cuadros) {
         
         if(Number(cuadros[cuadro].innerText) === random) {
-            
             elemento = cuadros[cuadro]
+            // console.log(random)
+            // console.log(elemento)
         }
 
+
     }
-    
+    // elemento es el elemento html, el cuadro del cuadrado
     return elemento
 }
 
-function guardarCuadroArray() {
-    const elemento = obtenerCuadroRandom()
-    arrayRonda.push(elemento)
+function guardarCuadroArray(cuadro) {
     
+    arrayRonda.push(cuadro)
+    console.log(arrayRonda)
     return arrayRonda
     
 
 }
 // después hay que hacer que esta funcion se vaya ejecutando varias veces
 // y qué por cada vez vaya agregando un nuevo cuadro seleccionado al array
-guardarCuadroArray()
+
 
 function resaltarCuadroRandom() {
 
@@ -130,7 +138,6 @@ function resaltarCuadroRandom() {
     
     
 }
-resaltarCuadroRandom()
 
 
 function capturarCuadros() {
