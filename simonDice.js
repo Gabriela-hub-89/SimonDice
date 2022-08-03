@@ -88,6 +88,14 @@ let arrayRonda = []
 let rondas = 0
 let elemento;
 
+document.querySelector('#empezar').onclick = function() {
+
+    const cuadro = obtenerCuadroRandom(calcRandom(), capturarCuadros())
+    guardarCuadroArray(cuadro)
+    resaltarCuadroRandom(cuadro)
+    cuadro.onclick = clickarCuadro()
+    
+}
 
 function clickarCuadro(event) {
     let click
