@@ -114,7 +114,25 @@ function guardarCuadroArray() {
 
 }
 obtenerCuadroRandom(calcRandom(), capturarCuadros())
+// después hay que hacer que esta funcion se vaya ejecutando varias veces
+// y qué por cada vez vaya agregando un nuevo cuadro seleccionado al array
+guardarCuadroArray()
 
+function resaltarCuadroRandom() {
+
+    let elemento = obtenerCuadroRandom()
+    let tiempo = 1000
+    
+    elemento.style.opacity = 1
+
+    setTimeout(() => {
+        elemento.style.opacity = 0.5
+        elemento.style.transition = 'opacity 0.5s'
+    }, tiempo);
+    
+    
+}
+resaltarCuadroRandom()
 
 
 function capturarCuadros() {
@@ -134,6 +152,8 @@ function calcRandom() {
     const numRandom = (Math.floor(Math.random() * (4-1+1)+1))
     return numRandom
 }
+
+// let numeroRandom = calcRandom()
 
 
 
