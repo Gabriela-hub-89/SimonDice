@@ -105,6 +105,7 @@ function clickarCuadro(event) {
     }
 }
 
+function obtenerCuadroRandom(random, cuadros) {
     
     for (const cuadro in cuadros) {
         
