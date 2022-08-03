@@ -101,8 +101,17 @@ function obtenerCuadroRandom() {
         }
 
     }
-    console.log(arrayRonda)
+    
+    return elemento
+}
+
+function guardarCuadroArray() {
+    const elemento = obtenerCuadroRandom()
+    arrayRonda.push(elemento)
+    
     return arrayRonda
+    
+
 }
 obtenerCuadroRandom(calcRandom(), capturarCuadros())
 
