@@ -88,12 +88,16 @@ let arrayRonda = []
 let rondas = 0
 
 function obtenerCuadroRandom(random, cuadros) {
+function obtenerCuadroRandom() {
     
+    let random = calcRandom()
+    let cuadros = capturarCuadros()
+    let elemento;
     for (const cuadro in cuadros) {
         
-        const elemento = cuadros[cuadro]
-        if(Number(elemento.innerText) === random) {
-            arrayRonda.push(elemento)
+        if(Number(cuadros[cuadro].innerText) === random) {
+            
+            elemento = cuadros[cuadro]
         }
 
     }
